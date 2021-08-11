@@ -5,15 +5,13 @@ const Theme = {
   DARK: 'dark-theme',
 };
 
-// bodyRef.classList.add(`${Theme.LIGHT}`);
- 
-export function onThemeChange(e) {
-    if (e.currentTarget.checked) {
-        bodyRef.classList.add(`${Theme.DARK}`);
-        bodyRef.classList.remove(`${Theme.LIGHT}`);
+export function onThemeChange() {
+    bodyRef.classList.add(`${Theme.LIGHT}`);
+
+    if (checkboxRef.checked) {
+        bodyRef.classList.replace(`${Theme.LIGHT}`, `${Theme.DARK}`);
     } else {
-        bodyRef.classList.remove(`${Theme.DARK}`);
-        bodyRef.classList.add(`${Theme.LIGHT}`);
+        bodyRef.classList.replace(`${Theme.DARK}`, `${Theme.LIGHT}`);
         checkboxRef.removeAttribute("checked"); 
     };
 
