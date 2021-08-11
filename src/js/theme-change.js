@@ -15,17 +15,17 @@ export function onThemeChange() {
         bodyRef.classList.replace(`${Theme.DARK}`, `${Theme.LIGHT}`);
         checkboxRef.removeAttribute("checked"); 
     };
-    localStorage.setItem("theme", bodyRef.className);
+    // localStorage.setItem("theme", bodyRef.className);
 }
 
-export function saveTheme() {
-    const theme = localStorage.getItem("theme");
+// export function saveTheme() {
+//     const theme = localStorage.getItem("theme");
     
-    if (theme !== "") {
-        bodyRef.className = theme;
-    };
+//     if (theme !== "") {
+//         bodyRef.className = theme;
+//     };
 
-    if (theme === Theme.DARK) {
-        checkboxRef.setAttribute("checked", true); 
-    };
-};
+//     if (theme === Theme.DARK) {
+//         checkboxRef.setAttribute("checked", true); 
+//     };
+// };

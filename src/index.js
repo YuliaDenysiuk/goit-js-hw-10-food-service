@@ -10,4 +10,4 @@ menuRef.insertAdjacentHTML("beforeend", menuItemMarkup);
 
 checkboxRef.addEventListener("change", onThemeChange);
 
-saveTheme();
+// saveTheme();
