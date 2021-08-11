@@ -5,7 +5,7 @@ const Theme = {
   DARK: 'dark-theme',
 };
 
-bodyRef.classList.add(`${Theme.LIGHT}`);
+// bodyRef.classList.add(`${Theme.LIGHT}`);
  
 export function onThemeChange(e) {
     if (e.currentTarget.checked) {
