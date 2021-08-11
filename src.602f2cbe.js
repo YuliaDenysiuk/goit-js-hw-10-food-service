@@ -15,4 +15,4 @@ var e,t=arguments[3];!function(t,r){"object"==typeof exports&&"object"==typeof m
 },{"./refs.js":"VyiV"}],"Focm":[function(require,module,exports) {
 "use strict";require("./css/styles.css");var e=t(require("./menu.json")),s=t(require("./templates/menu-item.hbs")),r=require("./js/refs.js"),n=require("./js/theme-change.js");function t(e){return e&&e.__esModule?e:{default:e}}const u=(0,s.default)(e.default);r.menuRef.insertAdjacentHTML("beforeend",u),r.checkboxRef.addEventListener("change",n.onThemeChange);
 },{"./css/styles.css":"krre","./menu.json":"mA8c","./templates/menu-item.hbs":"eREJ","./js/refs.js":"VyiV","./js/theme-change.js":"lWB6"}]},{},["Focm"], null)
-//# sourceMappingURL=/goit-js-hw-10-food-service/src.9986f3ba.js.map
+//# sourceMappingURL=/goit-js-hw-10-food-service/src.602f2cbe.js.map
