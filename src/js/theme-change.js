@@ -5,8 +5,9 @@ const Theme = {
   DARK: 'dark-theme',
 };
 
+bodyRef.classList.add(`${Theme.LIGHT}`);
+
 export function onThemeChange() {
-    bodyRef.classList.add(`${Theme.LIGHT}`);
 
     if (checkboxRef.checked) {
         bodyRef.classList.replace(`${Theme.LIGHT}`, `${Theme.DARK}`);
@@ -15,17 +16,17 @@ export function onThemeChange() {
         checkboxRef.removeAttribute("checked"); 
     };
 
-    localStorage.setItem("theme", bodyRef.className);
+    // localStorage.setItem("theme", bodyRef.className);
 }
 
-export function saveTheme() {
-    const theme = localStorage.getItem("theme");
+// export function saveTheme() {
+//     const theme = localStorage.getItem("theme");
     
-    if (theme !== "") {
-        bodyRef.className = theme;
-    };
+//     if (theme !== "") {
+//         bodyRef.className = theme;
+//     };
 
-    if (theme === Theme.DARK) {
-        checkboxRef.setAttribute("checked", true); 
-    };
-};
+//     if (theme === Theme.DARK) {
+//         checkboxRef.setAttribute("checked", true); 
+//     };
+// };
