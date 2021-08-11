@@ -15,7 +15,6 @@ export function onThemeChange() {
         bodyRef.classList.replace(`${Theme.DARK}`, `${Theme.LIGHT}`);
         checkboxRef.removeAttribute("checked"); 
     };
-
     // localStorage.setItem("theme", bodyRef.className);
 }
 
