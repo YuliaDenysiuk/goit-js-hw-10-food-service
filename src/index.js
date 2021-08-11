@@ -8,6 +8,6 @@ const menuItemMarkup = menuItemsTemplate(foodServiceMenu);
 
 menuRef.insertAdjacentHTML("beforeend", menuItemMarkup);
 
-saveTheme();
-
 checkboxRef.addEventListener("change", onThemeChange);
+
+saveTheme();

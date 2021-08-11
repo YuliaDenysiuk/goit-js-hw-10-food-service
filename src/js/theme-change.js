@@ -19,8 +19,11 @@ export function onThemeChange() {
 }
 
 export function saveTheme() {
-    let theme = localStorage.getItem("theme");
-    bodyRef.className = theme;
+    const theme = localStorage.getItem("theme");
+    
+    if (theme !== "") {
+        bodyRef.className = theme;
+    };
 
     if (theme === Theme.DARK) {
         checkboxRef.setAttribute("checked", true); 
